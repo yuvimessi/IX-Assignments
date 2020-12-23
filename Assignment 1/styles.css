@@ -1,0 +1,23 @@
+body {
+    font-size: 14pt;
+    color: black;
+    background-image: url("imgs/bg-white.jpg");
+    background-position: center;
+    background-size: auto;
+}
+
+#register {
+    padding: 2%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    border-radius: 50px;
+}
+
+.form-rounded{
+    border-radius: 10pt;
+}

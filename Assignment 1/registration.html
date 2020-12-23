@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>User Registration</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="form_validate.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="register"
+        class="container col-md-5 mx-auto my-auto">
+
+        <h1 class="text-center">Create a New Account</h1>
+
+        <form id="regform" onsubmit="return false">
+
+            <br>
+
+            <div class="form-group row">
+                <label for="uname" class="col-form-label col-md-6">User Name:
+                </label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control form-rounded" id="uname" placeholder="User Name" autofocus required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="passwd" class="col-form-label col-md-6">New Password:
+                </label>
+                <div class="col-md-6">
+                    <input type="password" class="form-control form-rounded" id="passwd" placeholder="Enter a New Password" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="cpasswd" class="col-form-label col-md-6">Confirm Password:
+                </label>
+                <div class="col-md-6">
+                    <input type="password" class="form-control form-rounded" id="cpasswd" placeholder="Retype the password" required>
+                </div>
+            </div>
+
+            <div id="msg"></div>
+
+            <div class="form-group row">
+                    <button type="reset" class="btn btn-danger mx-auto">Reset</button>
+                    <button type="submit" class="btn btn-success mx-auto" onclick="validation()">Sign
+                        Up</button>
+            </div>
+        </form>
+    </div><br>
+
+</body>
+
+
+
+
+
+
+</html>
